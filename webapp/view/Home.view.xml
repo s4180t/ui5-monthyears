@@ -11,7 +11,8 @@
 				value="{/date}"
 				valueFormat="MM/yyyy"
 				displayFormat="MM/yyyy"
-				change="handleDateChange" />
+				change="handleDateChange"
+				minDate="{/minDate}" />
 		</content>
 	</Page>
 </mvc:View>

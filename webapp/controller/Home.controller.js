@@ -6,7 +6,11 @@ sap.ui.define(
     return Controller.extend("sap.ui.demo.basicTemplate.controller.App", {
       formatter: formatter,
 
-      onInit: function () {},
+      onInit: function () {
+        const dNow = new Date();
+        const dMinDate = new Date(dNow.getFullYear(), dNow.getMonth(), 1);
+        this.getOwnerComponent().getModel().setProperty("/minDate", dMinDate);
+      },
 
       handleDateChange: function (oEvent) {
         MessageToast.show(
