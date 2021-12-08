@@ -1,0 +1,17 @@
+<mvc:View
+	controllerName="sap.ui.demo.basicTemplate.controller.Home"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		id="page"
+		title="{i18n>title}">
+		<content>
+			<DatePicker
+				value="{/date}"
+				valueFormat="MM/yyyy"
+				displayFormat="MM/yyyy"
+				change="handleDateChange" />
+		</content>
+	</Page>
+</mvc:View>
