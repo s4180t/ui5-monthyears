@@ -10,12 +10,7 @@
     "title": "{{appTitle}}",
     "description": "{{appDescription}}",
     "resources": "resources.json",
-    "ach": "ach",
-    "dataSources": {
-      "default": {
-        "uri": "model/default.json"
-      }
-    }
+    "ach": "ach"
   },
 
   "sap.ui": {
@@ -62,9 +57,7 @@
         }
       },
       "": {
-        "type": "sap.ui.model.json.JSONModel",
-        "preload": true,
-        "dataSource": "default"
+        "type": "sap.ui.model.json.JSONModel"
       }
     },
     "resources": {
